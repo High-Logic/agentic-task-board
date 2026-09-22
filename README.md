@@ -1,10 +1,5 @@
 # 序事 · Agentic 本地任务看板系统
 
-> 基于 **Vue 3 (Composition API / `<script setup>`) + Vite + Tailwind CSS + localStorage** 纯前端实现，严格遵循 Agentic 驱动的多轮迭代与“计划-执行-确认”流程，零后端依赖。
-
-- **GitHub 仓库**：[High-Logic/agentic-task-board](https://github.com/High-Logic/agentic-task-board)
-- **交付内容**：完整源码、Node 单元测试、Playwright E2E 浏览器自动化测试、21 项全功能真实运行截图、提示词设计及开发日志。
-
 ---
 
 ## 目录
