@@ -34,7 +34,8 @@ npm run preview
 
 本机沙箱的默认 npm 缓存不可写，安装时使用了 `--cache ../../work/npm-cache`。普通环境可直接 `npm ci`。Vite 脚本使用 `--configLoader native`，避免本机配置打包阶段的上级目录权限问题。
 
-`npm test`：5 项 Node 单元测试；`npm run test:e2e`：8 项 Chrome 浏览器测试。未配置 lint 或 TypeScript 检查，因此没有宣称通过这些检查。真实日志见 [测试结果](docs/test-results/)。
+
+pm test`：5 项 Node 单元测试；`npm run test:e2e`：8 项 Chrome 浏览器测试。未配置 lint 或 TypeScript 检查，因此没有宣称通过这些检查。真实日志见 [测试结果](docs/test-results/)。
 
 ## 使用方法
 
@@ -90,4 +91,5 @@ public/            网站图标
 数据仅在同一浏览器、同一源（协议、主机、端口）内保存。开发端口 5173 与预览端口 4173 的数据互不共享；清除浏览器数据会移除任务。多标签页同时修改没有冲突合并，建议单标签页操作。未实现同列排序、登录、云同步或部署。原生拖放已在桌面 Chrome 验证，触屏请使用编辑表单。没有声称完成所有浏览器兼容性验证。
 
 GitHub 仓库地址：**尚未创建／推送，待用户确认目标及授权。**
-`n生产浏览器补充验证：先启动预览服务，再运行 `node tests/production-smoke.mjs`；本次已通过，结果见 `docs/test-results/production-smoke.json`。Windows 运行 npm ci 前请停止项目 Vite 服务，避免原生模块文件被占用。
+
+生产浏览器补充验证：先启动预览服务，再运行 `node tests/production-smoke.mjs`；本次已通过，结果见 `docs/test-results/production-smoke.json`。Windows 运行 npm ci 前请停止项目 Vite 服务，避免原生模块文件被占用。

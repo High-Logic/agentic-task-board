@@ -1,0 +1,17 @@
+
+> taskflow-course@1.0.0 test
+> node --test tests/*.test.js
+
+✔ 标题空白校验与枚举校验 (0.7413ms)
+✔ 创建及更新保持 ID 和创建时间 (3.3761ms)
+✔ 存储恢复与合法空数组 (4.9817ms)
+✔ 损坏数据、结构异常、读取异常保留原存储 (0.3087ms)
+✔ 写入失败返回明确错误 (0.2616ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 105.3784

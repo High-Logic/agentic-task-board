@@ -49,3 +49,8 @@ Git 初始化后出现沙箱在线/离线账户所有权差异；使用单次命
 补充安装复现：最终 npm ci 首次因运行中的 Vite 占用 Windows 原生 lightningcss 模块而 EPERM；停止本任务测试服务后重试，54个依赖2秒安装成功，日志 install.txt；保留 install-first-run-failed.txt。随后再次生产构建成功。
 生产验证：npm ci 使用锁文件安装54项成功；重新 npm run build 成功；启动 npm run preview -- --port 4173，node tests/production-smoke.mjs 在 Chrome 153.0.8010.52 验证生产页面创建任务、刷新保留、无控制台错误，结果 production-smoke.json。开发预览已重新启动于5173。
 最终本地交付约15:46完成，合计约30分钟（环境/开发/验证/文档），超出20—25分钟开发参考；必做功能与证据未省略。远程交付不计为已完成。
+
+第5轮提交：87387dd。
+
+## 交付核对补充
+最终核对发现 `.gitignore` 的 `test-results/` 同时忽略 docs/test-results，改为仅忽略根目录 `/test-results/`，补充跟踪真实验证日志。五轮功能提交不修改，不重写历史。另修正文档追加时出现的字面量换行标记。本补充仅影响文档和证据归档，不修改应用界面。

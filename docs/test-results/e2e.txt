@@ -1,0 +1,19 @@
+
+> taskflow-course@1.0.0 test:e2e
+> playwright test
+
+
+Running 8 tests using 1 worker
+
+(node:15332) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\final.spec.js:5:1 › 最终验收：功能截图、主题双向持久化、演示数据及无控制台错误 (6.4s)
+  ok 2 tests\final.spec.js:21:1 › 最终验收：窄屏、长文本、普通文本安全与主题写入失败 (877ms)
+  ok 3 tests\final.spec.js:25:1 › 最终验收：结构异常和读取失败不白屏 (718ms)
+  ok 4 tests\round1.spec.js:2:1 › 第1轮：真实浏览器加载布局及 Tailwind (332ms)
+  ok 5 tests\round2.spec.js:2:1 › 第2轮：CRUD、校验、取消编辑与取消删除 (940ms)
+  ok 6 tests\round3.spec.js:3:1 › 第3轮：创建、编辑、删除逐次刷新和空数组 (1.2s)
+  ok 7 tests\round3.spec.js:8:1 › 第3轮：损坏存储不覆盖，写入失败不虚报成功 (849ms)
+  ok 8 tests\round4.spec.js:7:1 › 第4轮：真实鼠标拖入空列、双向移动、同列与取消、刷新一致 (2.0s)
+
+  8 passed (14.9s)

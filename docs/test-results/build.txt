@@ -1,0 +1,13 @@
+
+> taskflow-course@1.0.0 build
+> vite build --configLoader native
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 18 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  0.53 kB │ gzip:  0.42 kB
+dist/assets/index-BPWHLIST.css  11.35 kB │ gzip:  3.52 kB
+dist/assets/index-BQhQFhUF.js   78.98 kB │ gzip: 31.41 kB
+✓ built in 1.13s
