@@ -1,10 +1,9 @@
 # 序事 · Agentic 本地任务看板系统
 
-> **北京大学 软件工程课程 · Agentic 开发实践作业**  
 > 基于 **Vue 3 (Composition API / `<script setup>`) + Vite + Tailwind CSS + localStorage** 纯前端实现，严格遵循 Agentic 驱动的多轮迭代与“计划-执行-确认”流程，零后端依赖。
 
 - **GitHub 仓库**：[High-Logic/agentic-task-board](https://github.com/High-Logic/agentic-task-board)
-- **交付内容**：完整源码、Node 单元测试、Playwright E2E 浏览器自动化测试、21 项全功能真实运行截图、课程提示词设计及开发日志。
+- **交付内容**：完整源码、Node 单元测试、Playwright E2E 浏览器自动化测试、21 项全功能真实运行截图、提示词设计及开发日志。
 
 ---
 
@@ -14,7 +13,6 @@
 3. [Agentic 开发流程与提示词设计](#三agentic-开发流程与提示词设计)
 4. [环境要求与运行命令](#四环境要求与运行命令)
 5. [系统架构与持久化设计](#五系统架构与持久化设计)
-6. [5-10 分钟课堂演示提纲](#六5-10-分钟课堂演示提纲)
 
 ---
 
