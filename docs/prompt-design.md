@@ -24,6 +24,16 @@
 - 后续用户修改/反馈：截至本地最终验收，没有收到后续功能修改提示或评价。网络权限批准属于环境授权，不伪装成需求迭代。
 - 每轮对应实现、命令、失败与修复详见 development-log.md；截图与验收对应关系见 acceptance.md。
 
+## 后续用户真实提示（远程交付轮次）
+
+用户在本地五轮交付后实际发送：
+
+> [https://github.com/High-Logic/agentic-task-board](https://github.com/High-Logic/agentic-task-board)
+>
+> 这是我新建的云端空仓库。你看看能不能上传，如果不能我再把我的 GitHub Access Token给你。
+
+对应处理：检查空仓库，通过现有本机 Git 凭据推送 main，并核验远端提交、21张截图和课程文档。未索取或收到 Access Token，没有修改仓库可见性。
+
 ## 用户实际发送的提示词全文
 
 以下完整保留原任务书（包括其中的转义和 HTML 字符表示）：

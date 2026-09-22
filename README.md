@@ -2,7 +2,7 @@
 
 软件工程课程 Agentic 开发实践。使用 Vue 3 Composition API / `<script setup>`、Vite、Tailwind CSS 4 和 localStorage 完成可交互的中文任务工作空间，不使用后端或大模型接口。
 
-**本地应用、测试、21 张真实截图及课程文档已完成；远程仓库交付待完成。** 尚未提供目标 GitHub 仓库或新建仓库的账户、名称和可见性，未创建占位链接，也未公开代码。
+**本地应用、测试、21 张真实截图、课程文档及 GitHub 仓库交付已完成。** 仓库：[High-Logic/agentic-task-board](https://github.com/High-Logic/agentic-task-board)，默认分支 `main`。
 
 ## 功能
 
@@ -90,6 +90,6 @@ public/            网站图标
 
 数据仅在同一浏览器、同一源（协议、主机、端口）内保存。开发端口 5173 与预览端口 4173 的数据互不共享；清除浏览器数据会移除任务。多标签页同时修改没有冲突合并，建议单标签页操作。未实现同列排序、登录、云同步或部署。原生拖放已在桌面 Chrome 验证，触屏请使用编辑表单。没有声称完成所有浏览器兼容性验证。
 
-GitHub 仓库地址：**尚未创建／推送，待用户确认目标及授权。**
+GitHub 仓库地址：[https://github.com/High-Logic/agentic-task-board](https://github.com/High-Logic/agentic-task-board)。
 
 生产浏览器补充验证：先启动预览服务，再运行 `node tests/production-smoke.mjs`；本次已通过，结果见 `docs/test-results/production-smoke.json`。Windows 运行 npm ci 前请停止项目 Vite 服务，避免原生模块文件被占用。

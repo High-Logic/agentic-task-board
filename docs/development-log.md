@@ -54,3 +54,11 @@ Git 初始化后出现沙箱在线/离线账户所有权差异；使用单次命
 
 ## 交付核对补充
 最终核对发现 `.gitignore` 的 `test-results/` 同时忽略 docs/test-results，改为仅忽略根目录 `/test-results/`，补充跟踪真实验证日志。五轮功能提交不修改，不重写历史。另修正文档追加时出现的字面量换行标记。本补充仅影响文档和证据归档，不修改应用界面。
+
+## 后续轮次：用户指定 GitHub 仓库并授权上传
+目标：推送至用户提供的 https://github.com/High-Logic/agentic-task-board 并验证。
+检查：本地工作区干净、无已有远程；ls-remote 返回空，确认远端无分支。
+操作：添加 origin；使用现有本机 Git 凭据执行 push -u origin main 成功。没有要求用户发送 token。
+问题与解决：沙箱 Schannel 凭据错误，单次改用 OpenSSL；沙箱推送返回128，经权限审核使用本机 Git 凭据后成功。PowerShell API请求TLS失败，Node fetch成功。
+验证：初次远端 main 为 f85ac38ccf7cfebbd3658d2c4c5ef0070da4b5be，与本地一致；GitHub API返回公开仓库、默认main、README、课程文档和21张PNG截图。更新README、验收表、提示词后续反馈和远程说明，并再次提交推送。应用代码未改，不重跑已通过的功能测试；本轮执行Git与远程交付核验。
+未解决问题：无远程交付阻塞；应用既有局限保持README所述。提交见此条对应Git历史。
