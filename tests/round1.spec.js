@@ -1,0 +1,2 @@
+import { test, expect } from '@playwright/test'
+test('第1轮：真实浏览器加载布局及 Tailwind',async({page})=>{const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/');await expect(page.getByRole('heading',{name:'我的任务'})).toBeVisible();await expect(page.getByRole('button',{name:'新建任务'})).toBeVisible();expect(await page.locator('aside').evaluate(e=>getComputedStyle(e).backgroundColor)).toBe('rgb(16, 31, 54)');expect(errors).toEqual([]);})
